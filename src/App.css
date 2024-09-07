@@ -1,0 +1,193 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 50px;
+}
+#inputSearch,
+#formInput input,
+.info textarea {
+  width: 60%;
+  padding: 0.6em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 6px;
+  color: white;
+  border: 1px solid transparent;
+  background-color: #1a1a1a;
+}
+#inputSearch:focus,
+#formInput input:focus,
+#info:focus {
+  outline: 1px solid #646cff;
+}
+
+
+.containerCard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ===== Cards ===== */
+#cards {
+  width: 250px;
+  height: 450px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(24, 23, 23, 0.822);
+  overflow: hidden;
+  position: relative;
+}
+
+.headerCard {
+  box-shadow: inset 0 -40px 30px -10px #1a1a1af5;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.socialMedia {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.icon {
+  margin: 0px 5px;
+  color: rgba(255, 255, 255, 0.466);
+  transition: 0.3s all;
+}
+.icon:hover {
+  transform: scale(1.1);
+  color: white;
+}
+.nameInfo {
+  line-height: 7px;
+  width: 100%;
+  text-align: left;
+  padding: 5px 20px;
+}
+.nameInfo p {
+  font-size: 13px;
+}
+.contentInfo {
+  font-size: 13px;
+  text-align: left;
+  height: 150px;
+  padding: 8px 15px;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+}
+.skils {
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 0px 0px 5px 15px;
+}
+.content {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-between;
+}
+
+/* ====== page Forms =====*/
+#formInput div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#formInput input,
+.info textarea {
+  width: 90%;
+  border: 1px solid transparent;
+}
+#formInput label,
+legend {
+  color: white;
+  font-weight: 500;
+}
+
+#formInput input[type="radio"]:focus {
+  outline: 1px solid transparent;
+}
+.gender div {
+  flex-direction: row !important;
+}
+.gender div label {
+  display: flex;
+  margin-bottom: -20px;
+}
+.gender input {
+  accent-color: #2f38dc;
+}
+
+#formInput button {
+  width: 80%;
+}
+
+.arrowIcon{
+  font-size: 30px;
+  color: white;
+  margin-bottom:-10px;
+  width: 100%;
+  display:flex;
+  cursor: pointer;
+};
+
